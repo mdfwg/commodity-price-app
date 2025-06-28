@@ -4,3 +4,4 @@
 myenv/
 # ignore Python cache files
 __pycache__/
+data_prep/

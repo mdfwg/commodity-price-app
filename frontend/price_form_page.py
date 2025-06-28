@@ -53,7 +53,7 @@ def add_new_price_form():
         price = st.number_input("Price (Rp) *", min_value=0.0, step=0.01, format="%.2f")
         
         # Created by (get from session state if available)
-        created_by = st.text_input("Created By *", value=st.session_state.get('user_email', ''))
+        created_by = getattr(st.session_state['user'], 'id', '')
         
         # Submit button
         submit_button = st.form_submit_button("Add Price Entry", type="primary")
