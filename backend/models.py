@@ -18,6 +18,6 @@ class PriceFilter(BaseModel):
 class PriceUpdate(BaseModel):
     region: Optional[str] = None
     commodity: Optional[str] = None
-    date: Optional["date"] = None
+    date: Optional[str] = None
     price: Optional[float] = None
     created_by: Optional[str] = None

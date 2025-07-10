@@ -36,7 +36,7 @@ except ImportError:
 def dashboard_page():
     st.title("📊 Price Dashboard")
     st.markdown("View and analyze commodity price data")
-    st.write(st.session_state)
+    # st.write(st.session_state)
     
     # Sidebar filters
     st.sidebar.header("Filters")
